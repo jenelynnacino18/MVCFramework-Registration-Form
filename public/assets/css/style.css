@@ -1,0 +1,224 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: Manrope-Regular;
+  src: url("../fonts/Manrope/static/Manrope-Regular.ttf");
+}
+@font-face {
+  font-family: Manrope-Bold;
+  src: url("../fonts/Manrope/static/Manrope-Bold.ttf");
+}
+#register {
+  background-color: #3EECAC;
+  background-image: linear-gradient(19deg, #3EECAC 0%, #EE74E1 100%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#register .error {
+  width: 100%;
+  font-family: "Manrope-Regular";
+  font-size: 0.8em;
+  color: #bd6666;
+  text-align: center;
+}
+#register .registration {
+  max-width: 500px;
+  margin: 5em auto;
+}
+#register .registration .registration-grid-col-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+#register .registration .registration-grid-col-1 .registration-form .header {
+  text-align: center;
+  text-transform: uppercase;
+}
+#register .registration .registration-grid-col-1 .registration-form .header label {
+  font-size: 4em;
+  letter-spacing: 1px;
+  font-family: "Manrope-Bold";
+}
+#register .registration .registration-grid-col-1 .registration-form .input-form {
+  text-align: center;
+  margin-top: 2em;
+}
+#register .registration .registration-grid-col-1 .registration-form .input-form .reg-fullname {
+  margin: 0.5em;
+}
+#register .registration .registration-grid-col-1 .registration-form .input-form .reg-fullname input {
+  font-family: "Manrope-Regular";
+  width: 25vw;
+  border: none;
+  padding: 0.9em;
+  border-radius: 2px;
+  text-transform: capitalize;
+}
+#register .registration .registration-grid-col-1 .registration-form .input-form .reg-fullname input:focus {
+  outline: none;
+}
+#register .registration .registration-grid-col-1 .registration-form .input-form .reg-birthdate {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3px;
+  display: flex;
+  justify-content: center;
+  margin: 0.5em;
+}
+#register .registration .registration-grid-col-1 .registration-form .input-form .reg-birthdate input, #register .registration .registration-grid-col-1 .registration-form .input-form .reg-birthdate select {
+  font-family: "Manrope-Regular";
+  width: 8.2vw;
+  border: none;
+  padding: 0.9em;
+  border-radius: 2px;
+  text-transform: capitalize;
+}
+#register .registration .registration-grid-col-1 .registration-form .input-form .reg-birthdate input:focus, #register .registration .registration-grid-col-1 .registration-form .input-form .reg-birthdate select:focus {
+  outline: none;
+}
+#register .registration .registration-grid-col-1 .registration-form .input-form .reg-birthdate select .option-1 {
+  color: green;
+}
+#register .registration .registration-grid-col-1 .registration-form .input-form .reg-sex-nationality {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3px;
+  display: flex;
+  justify-content: center;
+  margin: 0.5em;
+}
+#register .registration .registration-grid-col-1 .registration-form .input-form .reg-sex-nationality input {
+  font-family: "Manrope-Regular";
+  width: 12.5vw;
+  border: none;
+  padding: 0.9em;
+  border-radius: 2px;
+  text-transform: capitalize;
+}
+#register .registration .registration-grid-col-1 .registration-form .input-form .reg-sex-nationality input:focus {
+  outline: none;
+}
+#register .registration .registration-grid-col-1 .registration-form .input-form .reg-mobile-number {
+  margin: 0.5em;
+}
+#register .registration .registration-grid-col-1 .registration-form .input-form .reg-mobile-number input {
+  font-family: "Manrope-Regular";
+  width: 25vw;
+  border: none;
+  padding: 0.9em;
+  border-radius: 2px;
+  text-transform: capitalize;
+}
+#register .registration .registration-grid-col-1 .registration-form .input-form .reg-mobile-number input:focus {
+  outline: none;
+}
+#register .registration .registration-grid-col-1 .registration-form .input-form .reg-complete-add {
+  margin: 0.5em;
+}
+#register .registration .registration-grid-col-1 .registration-form .input-form .reg-complete-add input {
+  font-family: "Manrope-Regular";
+  width: 25vw;
+  border: none;
+  padding: 0.9em;
+  border-radius: 2px;
+  text-transform: capitalize;
+}
+#register .registration .registration-grid-col-1 .registration-form .input-form .reg-complete-add input:focus {
+  outline: none;
+}
+#register .registration .registration-grid-col-1 .registration-form .input-form .reg-email {
+  margin: 0.5em;
+}
+#register .registration .registration-grid-col-1 .registration-form .input-form .reg-email input {
+  font-family: "Manrope-Regular";
+  width: 25vw;
+  border: none;
+  padding: 0.9em;
+  border-radius: 2px;
+}
+#register .registration .registration-grid-col-1 .registration-form .input-form .reg-email input:focus {
+  outline: none;
+}
+#register .registration .registration-grid-col-1 .registration-form .input-form .signup-button {
+  margin: 0.5em;
+}
+#register .registration .registration-grid-col-1 .registration-form .input-form .signup-button button {
+  width: 25vw;
+  font-family: "Manrope-Bold";
+  border: 1px solid white;
+  text-transform: uppercase;
+  padding: 0.9em;
+  border-radius: 2px;
+  cursor: pointer;
+  background: transparent;
+  transition: background 1s ease-in-out;
+}
+#register .registration .registration-grid-col-1 .registration-form .input-form .signup-button button:hover {
+  background: linear-gradient(19deg, #EE74E1 0%, #3EECAC 100%);
+}
+#register .registration .registration-grid-col-1 .registration-form .input-form .signup-button button:focus {
+  outline: none;
+}
+#register .footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.5em;
+  text-align: right;
+}
+#register .footer label {
+  letter-spacing: 1px;
+  font-family: "Manrope-Bold";
+  font-size: 0.7em;
+}
+
+#regcomplete {
+  background-color: #3EECAC;
+  background-image: linear-gradient(19deg, #3EECAC 0%, #EE74E1 100%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#regcomplete .reg-complete {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#regcomplete .reg-complete label {
+  font-family: "Manrope-Regular";
+  text-transform: uppercase;
+}
+#regcomplete .reg-complete a {
+  font-family: "Manrope-Regular";
+  text-decoration: none;
+  text-transform: capitalize;
+}
+#regcomplete .reg-complete .footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.5em;
+  text-align: right;
+}
+#regcomplete .reg-complete .footer label {
+  letter-spacing: 1px;
+  font-family: "Manrope-Bold";
+  font-size: 0.7em;
+}
+
+/*# sourceMappingURL=style.css.map */
